@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+
+    <title>la naturalidad</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- //for-mobile-apps -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!--fonts-->
+
+
+    <!--//fonts-->
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <!-- js -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- start-header -->
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                el atractivo de la
+            </a>
+        </div>
+        <div class="navigation" style="float: none!important;">
+
+            <ul class="nav1" style="display: flex;justify-content: space-between">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Artículo</a></li>
+
+
+                <li><a href="contact.html">Contactos</a></li>
+                <li><a href="policy.html">Política de privacidad</a></li>
+                <li><a href="terms.html">Términos y condiciones</a></li>
+            </ul>
+            <!-- script for menu -->
+            <script>
+                $("span.menu").click(function () {
+                    $("ul.nav1").slideToggle(300, function () {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- //script for menu -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- end-header -->
+<!-- start banner -->
+
+<!-- blog-page -->
+<div class="blog">
+    <div class="container">
+        <div class="blog-head">
+            <h3>Gracias por su solicitud!</h3>
+        </div>
+        <div class="col-md-8 blog-left" >
+            <div class="blog-info">
+                <div class="blog-info-text">
+                    Gracias por su solicitud!
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--//blog-->
+
+<!-- //blog-page -->
+<!-- foot-line -->
+<div class="foot-line">
+</div>
+<!-- //foot-line -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-3 footer-grid">
+
+                <ul>
+
+                    <li><a href="contact.html">Contactos</a></li>
+                    <li><a href="policy.html">Política de privacidad</a></li>
+                    <li><a href="terms.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+            All rights reserved</p>
+    </div>
+</div>
+
+
+<div class='cookie-banner'>
+    <p>
+        El sitio web utiliza "cookies". Permiten identificarlo y recibir su información de la experiencia del usuario.Continuando con la navegación de la web, estoy de acuerdo con el uso de las cookies, el propietario del sitio de conformidad con  <a target="_blank"
+                                          href="https://en.wikipedia.org/wiki/HTTP_cookie">Política de cookies</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+<script>
+    window.onload = function () {
+        $('.close-cookie').click(function () {
+            $('.cookie-banner').fadeOut();
+        })
+    }
+</script>
+<script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+</body>
+</html>
